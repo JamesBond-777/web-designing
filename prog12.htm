@@ -1,0 +1,40 @@
+<!--   12. WRITE JQUERY CODE TO SHOW append(), prepend(), after(), before()).  -->
+<html>
+	<head>
+		<script src="jquery.js"></script>
+		<script>
+			 $(document).ready(function(){
+            
+                //append()
+                $("#append").click(function(){
+                    $("ol").append("<li>WD</li>");
+                });
+				
+                //prepend()
+                $("#prepend").click(function(){
+                    $("ol").prepend("<li>WD</li>");
+                });
+				
+                //after()
+                $("#after").click(function(){
+                    $("ol").after("<li>WD</li>");
+                });
+				
+                //before()
+                $("#before").click(function(){
+                    $("ol").before("<li>WD</li>")
+                });
+            });
+		</script>
+	</head>
+	<body>
+        <ol start="1">
+            <li>IS</li><li>Iot</li>
+            <li>Java</li>
+        </ol>
+        <button id="append">Append</button>
+        <button id="prepend">Prepend</button>
+        <button id="after">After</button>
+        <button id="before">Before</button>
+    </body>
+</html>

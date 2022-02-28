@@ -1,0 +1,43 @@
+<!-- 8. WRITE JQUERY CODE TO SHOW CALLBACK METHODS. (SHOW ATLEAST 5 METHODS). -->
+<html>
+	<head>
+		<script src="jquery.js"> </script>
+		<script>
+			$(document).ready(function(){
+				$("#1").click(function(){
+					$("img").hide();
+				});
+			});
+			$(document).ready(function(){
+				$("#2").click(function(){
+					$("img").show();
+				});
+			});
+			$(document).ready(function(){
+				$("#3").click(function(){
+					$("img").toggle();
+				});
+			});
+			$(document).ready(function(){
+				$("#4").click(function(){
+					$("img").fadeTo(1000,0.5);
+				});
+			});
+			$(document).ready(function(){
+				$("#5").click(function(){
+					$("img").slideToggle();
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<center>
+			<img src="MSDmessi.jpg" height="75%" width="75%"> <br>
+			<button id="1"> HIDE </button> 
+			<button id="2"> SHOW </button> 
+			<button id="3"> TOGGLE </button> 
+			<button id="4"> FADE TO </button> 
+			<button id="5"> SLIDE TOGGLE </button> 
+		</center>
+	</body>
+</html>

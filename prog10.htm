@@ -1,0 +1,42 @@
+<!--  10. WRITE JQUERY CODE TO DEMONSTRATE HTML GET METHODS.(text(), attr(), html(), val()).  -->
+<html>
+	<head>
+		<script src="jquery.js"></script>
+		<script>
+			$(document).ready(function(){
+				
+				//TEXT()
+				$("#text").click(function(){
+					alert($("div").text());
+				});
+				
+				//HTML()
+				$("#html").click(function(){
+					alert($("div").html());
+				});
+				
+				//ATTR()
+				$("#attr").click(function(){
+					alert($("img").attr("height"));
+				});
+				
+				//VAL()
+				$("#val").click(function(){
+					alert($("#txt").val());
+				});
+				
+			});
+		</script>
+	</head>
+	<body>
+		<center>
+			<input type="text" id="txt">
+			<img src="gtr.jpg" height="400">
+			<div> Counter Strike: <b> Global </b> Offensive </div> <br>
+			<button id="text">Text</button>
+			<button id="html">Html</button>
+			<button id="attr">Attr</button>
+			<button id="val">Val</button>
+	</body> 
+</html>
+

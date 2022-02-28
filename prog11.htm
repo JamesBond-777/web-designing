@@ -1,0 +1,41 @@
+<!--  11. WRITE JQUERY CODE TO DEMONSTRATE HTML SET METHODS.(text(), attr(), html(), val()).  -->
+<html>	
+	<head>
+		<script src="jquery.js"></script>
+		<script>
+			$(document).ready(function(){
+				
+				//TEXT()
+				$("#text").click(function(){
+					$("div").text("COUNTER");
+				});
+				
+				//HTML()
+				$("#html").click(function(){
+					$("div").html("COUNTER Strike: <i>Global</i> Offensive");
+				});
+				
+				//ATTR()
+				$("#attr").click(function(){
+					$("img").attr("height","500");
+				});
+				
+				//VAL()
+				$("#val").click(function(){
+					$("#txt").val("COUNTER");
+				});
+				
+			});
+		</script>
+	</head>
+	<body>	
+		<center> 
+			<input type="text" id="txt">
+			<img src="gtr.jpg" height="400">
+			<div> Counter Strike: <b> Global </b> Offensive </div> <br>
+			<button id="text">Text</button>
+			<button id="html">Html</button>
+			<button id="attr">Attr</button>
+			<button id="val">Val</button>
+	</body>
+</html>

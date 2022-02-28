@@ -1,0 +1,31 @@
+<!-- 5. WRITE JQUERY CODE TO fadeIn(),fadeOut() AND fadeToggle() METHODS. -->
+<html>
+	<head>
+		<script src="jquery.js"> </script>
+		<script>
+			$(document).ready(function(){
+				$("#1").click(function(){
+					$("img").fadeIn();
+				});
+			});
+			$(document).ready(function(){
+				$("#2").click(function(){
+					$("img").fadeOut();
+				});
+			});
+			$(document).ready(function(){
+				$("#3").click(function(){
+					$("img").fadeToggle();
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<center>
+			<img style="display:none" src="MSDmessi.jpg" height="70%" width="70%">
+			<button id="1"> FADE IN </button>
+			<button id="2"> FADE OUT </button>
+			<button id="3"> FADE TOGGLE </button>
+		</center>
+	</body>
+</html>

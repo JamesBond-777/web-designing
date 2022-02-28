@@ -1,0 +1,21 @@
+<!-- 9. WRITE JQUERY CODE TO SHOW CHAINING METHODS (hide(), show(), fadeTo(), slideUp(), slideDown()). -->
+<html>
+	<head>
+		<script src="jquery.js"> </script>
+		<script>
+			$(document).ready(function(){
+				$("button").click(function(){
+					$("#1").hide("slow").show("slow").fadeTo("slow",0.5).slideUp(1000).slideDown(1000).fadeTo("slow",1);
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<center>
+			<div>
+				<img id="1" src="mustang.jpg"> </img>
+				<button> Click Here </button>
+			</div>
+		</center>
+	</body>
+</html>	

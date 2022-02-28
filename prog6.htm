@@ -1,0 +1,29 @@
+<!-- 6. WRITE JQUERY CODE TO slideUp(),slideDown() AND slideToggle() METHODS. -->
+<html>
+	<head>
+		<script src="jquery.js"> </script>
+		<script>
+			$(document).ready(function(){
+				$("#1").click(function(){
+					$("img").slideUp();
+				});
+			});
+			$(document).ready(function(){
+				$("#2").click(function(){
+					$("img").slideDown();
+				});
+			});
+			$(document).ready(function(){
+				$("#3").click(function(){
+					$("img").slideToggle();
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<img src="MSDmessi.jpg" height="70%" width="70%">
+		<button id="1"> SLIDE UP </button>
+		<button id="2"> SLIDE DOWN </button>
+		<button id="3"> SLIDE TOGGLE </button>
+	</body>
+</html>

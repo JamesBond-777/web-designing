@@ -1,0 +1,36 @@
+<!--   13. WRITE JQUERY CODE TO DEMONSTRATE remove() AND empty() METHODS.  -->
+<html>
+	<head>
+		<script src="jquery.js"></script>
+		<script>
+			//remove()
+			$(document).ready(function(){
+				$("#1").click(function(){
+					$("div").remove();
+				});
+			});
+			
+			//empty()
+			$(document).ready(function(){
+				$("#2").click(function(){
+					$("div").empty();
+				});
+			});
+		</script>
+		<style>
+			.sybca
+			{
+				background-color:blue;
+				height: 200px;
+				width: 200px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="sybca">
+			Vidyabharti Trust College of Business, Computer Science & Research
+		</div>
+		<button id="1"> Remove </button>
+		<button id="2"> Empty </button>
+	</body>
+</html>
