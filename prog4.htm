@@ -1,0 +1,31 @@
+<!-- 4. WRITE JQUERY CODE TO show(), hide() AND toggle() METHODS. -->
+<html>
+	<head>
+		<script src="jquery.js"> </script>
+		<script>
+			$(document).ready(function(){
+				$("#1").click(function(){
+					$("img").hide();
+				});
+			});
+			$(document).ready(function(){
+				$("#2").click(function(){
+					$("img").show();
+				});
+			});
+			$(document).ready(function(){
+				$("#3").click(function(){
+					$("img").toggle();
+				});
+			});
+			</script>
+	</head>
+	<body>
+		<center>
+			<img src="MSDmessi.jpg" height="100%" width="100%">
+			<button id="1"> HIDE </button>
+			<button id="2"> SHOW </button>
+			<button id="3"> TOGGLE </button>
+		</center>
+	</body>
+</html>
